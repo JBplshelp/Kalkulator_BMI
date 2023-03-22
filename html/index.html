@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kalkulator_BMI</title>
+	<link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+	<header>
+		<center>
+		<h1 style= "border-width:10px; border-style:groove;">Kalkulator BMI</h1>
+		</center>
+	</header>
+	<main class="center">
+		<center>
+			<div class="info">
+				<p>Gunakan Kalkulator ini untuk memeriksa indeks massa tubuh(IMT) dan mengecek
+				apakah berat badan anda sudah ideal atau tidak.
+				Kalkulator ini hanya boleh dipakai oleh orang dewasa
+				(wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini)
+				dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat.</p>
+				</div>
+		<div class="kalkulator">
+			<form class="form">
+				<div class="form-group">
+					<label for="jenis-kelamin" class="label-judul">Jenis Kelamin</label>
+					<span class="radio">
+						<input id="laki-laki" type="radio" name="jenis-kelamin" value="laki-laki" required> 
+						<label for="laki-laki">Laki-Laki</label>
+					</span>
+					<span class="radio">
+						<input id="perempuan" type="radio" name="jenis-kelamin" value="perempuan" required> 
+						<label for="perempuan">Perempuan</label>
+					</span>
+				</div>
+				<div class="form-group">
+					<label for="berat-badan">Berat Badan (Kg)</label>
+					<div class="form-control">
+						<i class="fa-solid fa-pencil"></i>
+						<input min="0"id="berat-badan" type="number" name="berat-badan" placeholder="Berat Badan...." required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="usia">Usia (Tahun)</label>
+					<div class="form-control">
+						<i class="fa-solid fa-pencil"></i>
+						<input min="0" id="usia" type="number" name="usia" placeholder="Usia...." required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="tinggi-badan">Tinggi Badan (Cm)</label>
+					<div class="form-control">
+						<i class="fa-solid fa-pencil"></i>
+						<input min="0" id="tinggi-badan" type="number" name="tinggi-badan" placeholder="Tinggi badan...." required>
+					</div>
+				</div>
+				<div class="form-button">
+					<button class="button bg-blue" type="submit" id="hitung">Hitung BMI</button>
+					<button class="reset" type="button" id="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+		<answer hidden='hidden' class = "answer">
+			<div class="hasil">
+				<h1>Hasil BMI</h1>
+				<p id="pernyataan-1"></p>
+				<h1 id="hasil"></h1>
+				<p id="pernyataan-2"></p>
+				<p id="pernyataan-3"></p>
+				<p id="pernyataan-4"></p>
+				<button class="reuse" type="button" id="hitung_lagi">Hitung lagi</button>
+			</div>
+		</answer>
+	</center>
+	</main>
+	<script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.form{
+    border: 1px solid black;
+    width: 500px;
+    Padding: 25px;
+    Background: rgba(255,255,255,0.5);
+    Border-radius: 50px;
+    Letter-spacing: 2px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button{
+    background-color: rgba(11, 179, 239, 0.5);
+    color: black
+}
+
+.answer{
+    border: 1px solid black;
+    width: 500px;
+    Padding: 25px;
+    Background: rgba(255,255,255,0.5);
+    Border-radius: 25px;
+    Letter-spacing: 2px;
+}
